@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Wardrobe.Models.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tops</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+    @foreach (var item in Model)
+    {
+        <div class="container">
+           
+                <div class="col-md-4 col-xs-12 colBorder">
+                    <div class="row">
+                        <h1>
+                            @Html.DisplayFor(modelItem => item.TopsName)
+                        </h1>
+                        <h4>
+                            <img class="img-responsive" src="@Html.DisplayFor(modelItem => item.TopsPhoto)" alt="Polo" />
+
+                        </h4>
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.TopsType)
+                        </h4>
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.TopsColor)
+                        </h4>
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.TopsSeason)
+                        </h4>
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.TopsOccasion)
+                        </h4>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                        </p>
+                    </div>
+            </div>
+        </div>
+    }
+
