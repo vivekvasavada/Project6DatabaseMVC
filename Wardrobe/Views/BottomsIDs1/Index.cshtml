@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Wardrobe.Models.BottomsID>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bottoms</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    <div class="container"></div>
+
+        <div class="col-md-4 col-xs-12 colBorder"></div>
+            <div class="row"></div>
+                <h1>
+                    @Html.DisplayFor(modelItem => item.BottomsName)
+                </h1>
+                <h4>
+                @Html.DisplayFor(modelItem => item.BottomsPhoto)
+                    <img src="~/Content/Images/jeans-for-men-mid-blue-wash-sid-skinny-stretch-jeans-u0027-auwglgd-.jpg" />
+                </h4>
+                <h4>
+                    <img src="~/Content/Images/$_32.JPG" />
+                </h4>
+                <h4>
+                    <img src="~/Content/Images/gant_main_1.jpg" />
+                </h4>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.BottomsType)
+                </h4>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.BottomsColor)
+                </h4>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.BottomsSeason)
+                </h4>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.BottomsOccasion)
+                </h4>
+                
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BottomsID1 }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.BottomsID1 }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BottomsID1 })
+                </p>
+
+                }
+
+            

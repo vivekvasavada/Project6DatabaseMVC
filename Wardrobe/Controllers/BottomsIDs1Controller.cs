@@ -10,17 +10,17 @@ using Wardrobe.Models;
 
 namespace Wardrobe.Controllers
 {
-    public class BottomsIDsController : Controller
+    public class BottomsIDs1Controller : Controller
     {
         private WardrobeEntities db = new WardrobeEntities();
 
-        // GET: BottomsIDs
+        // GET: BottomsIDs1
         public ActionResult Index()
         {
             return View(db.BottomsIDs.ToList());
         }
 
-        // GET: BottomsIDs/Details/5
+        // GET: BottomsIDs1/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace Wardrobe.Controllers
             return View(bottomsID);
         }
 
-        // GET: BottomsIDs/Create
+        // GET: BottomsIDs1/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: BottomsIDs/Create
+        // POST: BottomsIDs1/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace Wardrobe.Controllers
             return View(bottomsID);
         }
 
-        // GET: BottomsIDs/Edit/5
+        // GET: BottomsIDs1/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace Wardrobe.Controllers
             return View(bottomsID);
         }
 
-        // POST: BottomsIDs/Edit/5
+        // POST: BottomsIDs1/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace Wardrobe.Controllers
             return View(bottomsID);
         }
 
-        // GET: BottomsIDs/Delete/5
+        // GET: BottomsIDs1/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace Wardrobe.Controllers
             return View(bottomsID);
         }
 
-        // POST: BottomsIDs/Delete/5
+        // POST: BottomsIDs1/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

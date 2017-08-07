@@ -159,7 +159,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccessoriesController.cs" />
-    <Compile Include="Controllers\BottomsIDsController.cs" />
+    <Compile Include="Controllers\BottomsIDs1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShoesController.cs" />
     <Compile Include="Controllers\TopsController.cs" />
@@ -198,7 +198,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\%24_32.JPG" />
     <Content Include="Content\Images\2fd5824adaf460be0db3ccd7687eb5be23015b3e.jpg" />
+    <Content Include="Content\Images\gant_main_1.jpg" />
+    <Content Include="Content\Images\jeans-for-men-mid-blue-wash-sid-skinny-stretch-jeans-u0027-auwglgd-.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -255,11 +258,6 @@
     <Content Include="Views\Tops\Details.cshtml" />
     <Content Include="Views\Tops\Edit.cshtml" />
     <Content Include="Views\Tops\Index.cshtml" />
-    <Content Include="Views\BottomsIDs\Create.cshtml" />
-    <Content Include="Views\BottomsIDs\Delete.cshtml" />
-    <Content Include="Views\BottomsIDs\Details.cshtml" />
-    <Content Include="Views\BottomsIDs\Edit.cshtml" />
-    <Content Include="Views\BottomsIDs\Index.cshtml" />
     <Content Include="Views\Shoes\Create.cshtml" />
     <Content Include="Views\Shoes\Delete.cshtml" />
     <Content Include="Views\Shoes\Details.cshtml" />
@@ -270,6 +268,11 @@
     <Content Include="Views\Accessories\Details.cshtml" />
     <Content Include="Views\Accessories\Edit.cshtml" />
     <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\BottomsIDs1\Create.cshtml" />
+    <Content Include="Views\BottomsIDs1\Delete.cshtml" />
+    <Content Include="Views\BottomsIDs1\Details.cshtml" />
+    <Content Include="Views\BottomsIDs1\Edit.cshtml" />
+    <Content Include="Views\BottomsIDs1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
